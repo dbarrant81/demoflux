@@ -4,7 +4,7 @@ metadata:
   name: podinfo
   namespace: default
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: podinfo
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: podinfo
-          image: stefanprodan/podinfo:6.6.0
+          image: stefanprodan/podinfo:6.7.0
           ports:
             - containerPort: 9898
 ---
